@@ -1,5 +1,5 @@
 package palindrome;
 
 public interface PalindromeChecker {
-    boolean isPalindrome();
+    boolean isPalindrome(String s);
 }
