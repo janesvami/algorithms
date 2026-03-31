@@ -1,7 +1,6 @@
 package anagram;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class AnagramCheckerWithHashMap implements AnagramChecker {
     @Override

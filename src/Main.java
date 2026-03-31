@@ -20,7 +20,7 @@ import twosum.TwoSumHunterWithTwoCounters;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Anagram with sorting O(n log n): ");
+        System.out.println("Anagram with sorting: ");
         String a1 = "object";
         String a2 = "jectobK";
         AnagramChecker anagramCheckerWithSorting = new AnagramCheckerWithSorting();
@@ -28,14 +28,14 @@ public class Main {
         System.out.println(isAnagram1);
         System.out.println("=======================");
 
-        System.out.println("Anagram with char counting O(n), only the Latin alphabet:");
+        System.out.println("Anagram with char counting, only the Latin alphabet:");
         AnagramChecker anagramCheckerWithCharCounting = new AnagramCheckerWithCharCounting();
         boolean isAnagram2 = anagramCheckerWithCharCounting.isAnagram(a1, a2);
         System.out.println(isAnagram2);
 
         System.out.println("=======================");
 
-        System.out.println("Anagram with HashMap O(n):");
+        System.out.println("Anagram with HashMap:");
         AnagramChecker anagramCheckerWithHashMap = new AnagramCheckerWithHashMap();
         boolean isAnagram3 = anagramCheckerWithHashMap.isAnagram(a1, a2);
         System.out.println(isAnagram3);
@@ -76,7 +76,7 @@ public class Main {
         System.out.println("=======================");
 
 
-        System.out.println("TwoSum with brute force O(n²):");
+        System.out.println("TwoSum with brute force:");
         TwoSumHunter twoSum1 = new TwoSumHunterWithBruteForce();
         int[] arr = {3, 45, 6, 100, 8, 9};
         int[] arr2 = {2, 2};
@@ -84,14 +84,14 @@ public class Main {
         printArr(twoSumResult1);
         System.out.println("=======================");
 
-        System.out.println("TwoSum with two counters O(n), only for sorted arrays:");
+        System.out.println("TwoSum with two counters, only for sorted arrays:");
         TwoSumHunter twoSum2 = new TwoSumHunterWithTwoCounters();
         int[] sortedArr = {3, 4, 6, 8, 9, 45};
         int[] twoSumResult2 = twoSum2.findTwoSum(sortedArr, 11);
         printArr(twoSumResult2);
         System.out.println("=======================");
 
-        System.out.println("TwoSum with HashMap O(n):");
+        System.out.println("TwoSum with HashMap:");
         TwoSumHunter twoSum3 = new TwoSumHunterWithHashMap();
         int[] twoSumResult3 = twoSum3.findTwoSum(arr, 9);
         printArr(twoSumResult3);
@@ -99,7 +99,7 @@ public class Main {
         System.out.println("=======================");
 
 
-        System.out.println("FizzBuzz with cycle ():");
+        System.out.println("FizzBuzz with cycle:");
         FizzBuzzPrinter fizzBuzzPrinter = new FizzBuzzWithIfChain();
         fizzBuzzPrinter.fizzBuzzPrint();
         System.out.println("=======================");
